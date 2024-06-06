@@ -1,0 +1,122 @@
+/* BEGIN (write your solution here) */
+@font-face {
+  font-family: "Brygada-1918";
+  src: url("../assets/fonts/Brygada1918-Regular.ttf");
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: "OpenSans";
+  src: url("../assets/fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: "OpenSans";
+  src: url("../assets/fonts/OpenSans-Bold.ttf");
+}
+
+:root {
+  --white: #ffffff;
+  --yellow: #f7df1e;
+}
+
+body {
+  background-color: #0b1d26;
+  color: var(--white);
+  line-height: 2.3;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.section {
+  width: 1280px;
+  padding: 100px 0;
+  display: flex;
+}
+
+.section__text {
+  height: 713px;
+  padding: 0 30px;
+  flex-grow: 1;
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+}
+
+.section__image {
+  text-align: right;
+  height: 713px;
+  flex-basis: 50%;
+  padding: 0 30px;
+  flex-grow: 1;
+}
+
+.section__image img {
+  height: 700px;
+  text-align: right;
+}
+
+.main {
+  position: absolute;
+  margin-left: 30px;
+}
+
+.tagline {
+  display: flex;
+  height: 32px;
+  align-items: center;
+  position: absolute;
+}
+
+.tagline__number {
+  font-family: "OpenSans";
+  font-weight: 700;
+  font-size: 200px;
+  opacity: 0.1;
+  position: relative;
+  top: 25px;
+  right: 100px;
+}
+
+.tagline__profession {
+  font-family: "OpenSans";
+  font-weight: 700;
+  color: var(--yellow);
+  font-size: 14px;
+  position: relative;
+  right: 133px;
+  top: 20px;
+  letter-spacing: 4.2px;
+}
+
+.tagline__profession::before {
+  content: "";
+  width: 70px;
+  height: 2px;
+  background-color: var(--yellow);
+  position: absolute;
+  right: 156px;
+  top: 15px;
+}
+
+.main__name {
+  font-family: "Brygada-1918";
+  font-size: 64px;
+  line-height: 1;
+}
+
+.main__text {
+  font-family: "OpenSans";
+  font-size: 16px;
+}
+
+.main__more {
+  font-family: "OpenSans";
+  font-size: 17px;
+  color: var(--yellow);
+}
+/* END */
